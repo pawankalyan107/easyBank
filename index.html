@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +34,7 @@
       <div id="branding">
         <img src="./images/logo.svg">
       </div>
+      <div class="nav">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -42,14 +44,26 @@
           <li><a href="index.html">Careers</a></li>
         </ul>
       </nav>
+      </div>
       
       <a href="#" class="button">Request Invite</a>
+      <button id="btn"><img src="./images/icon-hamburger.svg"></button>
         
       </div>
     </div>
-  
-    
   </header>
+
+  <div class="navi">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="index.html">Careers</a></li>
+      </ul>
+    </nav>
+    </div>
 
   <section id="showcase">
     <div class="container">
@@ -171,6 +185,20 @@
   <div class="attribution">
     Coded by <a href="#">PawanKalyan</a>.
   </div>
+<script>
+$("#btn").click(function(){
+  
+  $(".navi").toggle(function(){
+    $(this).attr("src", "./images/icon-close.svg")
+  });
+  
+  
+  return false
+})
+
+
+</script>
+
 </body>
 
 </html>

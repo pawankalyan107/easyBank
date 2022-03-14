@@ -178,24 +178,56 @@ footer li a:hover{
     color: hsl(136, 65%, 51%);
 
 }
-header li a:hover{
+header li a:hover {
 
     color: hsl(136, 65%, 51%);
 }
 .button:hover{
     background:-webkit-linear-gradient(right,hsl(192, 100%, 70%), hsl(136, 100%, 70%));
 }
+.navi a:hover{
+    color:hsl(136, 65%, 51%);
+}
+button{
+    display:none
+}
+.navi{
+    position: absolute;
+    background-color: #ffff;
+    height: auto;
+    width:50vw;
+    text-align: center;
+    margin:25px 0 0 25%;
+    border-radius:5px;
+    display: none;
+    box-shadow: 100px 100px 120px 150px rgba(0,0,0,0.2);
 
+ }
+.navi li{
+    list-style: none;
+    padding:10px 0 10px 0;
+}
+.navi a {
+    color: black
+}
 
 
 @media (max-width: 600px) {
+    button{
+        display:block;
+        border:none;
+        background-color: #ffff;
+       /* background-image: url("./images/icon-close.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    */}
 
     .container {
         width:90%;
    
     }
 
-    header nav, header .button{
+    .navi, header .nav, header .button{
         display: none;
     }
     header .menu{
@@ -203,7 +235,7 @@ header li a:hover{
         float:right;
     }
     header {
-        background-image: url("./images/icon-hamburger.svg");
+       /* background-image: url("./images/icon-hamburger.svg");*/
         background-repeat: no-repeat;
         background-position: right;
     }
