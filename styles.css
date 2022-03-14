@@ -61,6 +61,8 @@ header .container{
 #showcase p {
     font-size:15px;
 }
+
+/*container*/
 #container {
     background-image: url("./images/image-mockups.png");
     background-repeat: no-repeat;
@@ -84,6 +86,8 @@ header .container{
     font-size:9.73px;
     
 }
+
+/*Articles*/
 #Articles .articles{
     display: flex;
     padding-top: 15px;
@@ -217,10 +221,7 @@ button{
         display:block;
         border:none;
         background-color: #ffff;
-       /* background-image: url("./images/icon-close.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-    */}
+      }
 
     .container {
         width:90%;
@@ -235,7 +236,7 @@ button{
         float:right;
     }
     header {
-       /* background-image: url("./images/icon-hamburger.svg");*/
+
         background-repeat: no-repeat;
         background-position: right;
     }
