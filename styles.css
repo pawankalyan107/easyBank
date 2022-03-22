@@ -258,6 +258,7 @@ header li a:hover {
     border-radius: 5px;
     display: none;
     box-shadow: 100px 100px 120px 150px rgba(0, 0, 0, 0.2);
+  
 
 }
 
@@ -289,12 +290,17 @@ header li a:hover {
 
     }
 
-    .navi,
+    
     header .nav,
     header .button, #showcase .image {
         display: none;
     }
 
+
+    .navi{
+        display: none;
+        z-index: 5;
+    }
     header .menu {
         display: inline;
         float: right;
